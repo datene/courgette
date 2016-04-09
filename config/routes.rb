@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root to: 'videos#index'
+  
+  as :user do
+    get "/login" => "devise/sessions#new"
+  end
 
   resources :videos, only: [:show]
 

@@ -13,6 +13,13 @@
         <li><a href="/">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+        <% if user_signed_in? %>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            Log out
+          <% end %>
+        </li>
+        <% end %>
       </ul>
     </div>
   </div>
