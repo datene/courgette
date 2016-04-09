@@ -1,0 +1,55 @@
+.videos-index {
+  background-color: black;
+}
+
+.video_item {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.preview_image {
+  height: 100vh;
+  background-size: cover !important;
+}
+
+.index_video_name {
+  color:white;
+  a {
+    color:$red;
+    opacity:0.6;
+    &:hover {
+      opacity:1;
+      text-decoration: none;
+      transition: opacity 200ms ease;
+    }
+    &:active {
+      text-decoration: none;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
+
+.index_video_description {
+  color:white;
+}
+
+.index_video_info {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 200px;
+  background-color: rgba(2,2,2,0.5);
+  padding: 20px;
+  border-top-left-radius: 10pt;
+}
+
+.highlight {
+  opacity: 0.6;
+}
+
+.indent {
+  margin-left: 15px;
+}
